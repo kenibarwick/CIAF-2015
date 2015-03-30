@@ -1,0 +1,2 @@
+C:\code\2015\Cirrious.Conference.UI.Touch\obj\iPhoneSimulator\Debug\
+C:\code\2015\Cirrious.Conference.UI.Touch\obj\iPhoneSimulator\Debug\Cirrious.Conference.UI.Touch.csprojResolveAssemblyReference.cache

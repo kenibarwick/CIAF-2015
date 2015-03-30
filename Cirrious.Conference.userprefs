@@ -1,0 +1,14 @@
+﻿<Properties StartupItem="Cirrious.Conference.UI.Touch\Cirrious.Conference.UI.Touch.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Distribution|iPhone" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Cirrious.Conference.UI.WP7\ConfResources\Text\Shared.json">
+    <Files>
+      <File FileName="Cirrious.Conference.UI.WP7\ConfResources\Text\Shared.json" Line="2" Column="2" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/imac/Documents/MvvmCross/Cirrious/Cirrious.MvvmCross.Binding/Binders/MvxFullBinding.cs" line="102" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

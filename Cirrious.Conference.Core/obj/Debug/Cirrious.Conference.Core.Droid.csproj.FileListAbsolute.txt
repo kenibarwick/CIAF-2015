@@ -1,0 +1,13 @@
+C:\code\MvvmCrossConference-master\Cirrious.Conference.Core\bin\Debug\Cirrious.Conference.Core.Droid.dll
+C:\code\MvvmCrossConference-master\Cirrious.Conference.Core\bin\Debug\Cirrious.Conference.Core.Droid.pdb
+C:\code\MvvmCrossConference-master\Cirrious.Conference.Core\bin\Debug\Cirrious.Conference.Core.Droid.dll.mdb
+C:\code\MvvmCrossConference-master\Cirrious.Conference.Core\bin\Debug\Cirrious.Conference.Core.Droid.apk
+C:\code\MvvmCrossConference-master\Cirrious.Conference.Core\bin\Debug\Cirrious.Conference.Core.Droid-Signed.apk
+C:\code\MvvmCrossConference-master\Cirrious.Conference.Core\bin\Debug\Cirrious.MvvmCross.Android.dll
+C:\code\MvvmCrossConference-master\Cirrious.Conference.Core\bin\Debug\Newtonsoft.Json.MonoDroid.dll
+C:\code\MvvmCrossConference-master\Cirrious.Conference.Core\obj\Debug\Cirrious.Conference.Core.Droid.csprojResolveAssemblyReference.cache
+C:\code\MvvmCrossConference-master\Cirrious.Conference.Core\obj\Debug\Cirrious.Conference.Core.Droid.dll
+C:\code\MvvmCrossConference-master\Cirrious.Conference.Core\obj\Debug\Cirrious.Conference.Core.Droid.pdb
+C:\code\MvvmCrossConference-master\Cirrious.Conference.Core\obj\Debug\android\bin\Cirrious.Conference.Core.Droid.apk
+C:\code\MvvmCrossConference-master\Cirrious.Conference.Core\obj\Debug\R.cs.flag
+C:\code\MvvmCrossConference-master\Cirrious.Conference.Core\obj\Debug\uploadflags.txt

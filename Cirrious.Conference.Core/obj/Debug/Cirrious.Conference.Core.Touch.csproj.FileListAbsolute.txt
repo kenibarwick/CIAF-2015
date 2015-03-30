@@ -1,0 +1,7 @@
+C:\code\2015\Cirrious.Conference.Core\bin\Debug\Cirrious.Conference.Core.Touch.dll
+C:\code\2015\Cirrious.Conference.Core\bin\Debug\Cirrious.Conference.Core.Touch.pdb
+C:\code\2015\Cirrious.Conference.Core\bin\Debug\CirriousMvvmCrossTouch.dll
+C:\code\2015\Cirrious.Conference.Core\bin\Debug\Newtonsoft_Json_MonoTouch.dll
+C:\code\2015\Cirrious.Conference.Core\obj\Debug\Cirrious.Conference.Core.Touch.csprojResolveAssemblyReference.cache
+C:\code\2015\Cirrious.Conference.Core\obj\Debug\Cirrious.Conference.Core.Touch.dll
+C:\code\2015\Cirrious.Conference.Core\obj\Debug\Cirrious.Conference.Core.Touch.pdb
