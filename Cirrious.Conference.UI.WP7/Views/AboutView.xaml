@@ -35,32 +35,7 @@
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
             <controls:Pivot>
                 <controls:PivotItem 
-                    Header="{Binding TextSource,Converter={StaticResource Language},ConverterParameter=ConferenceApp, FallbackValue=ConferenceApp}"
-                    >
-                    <ScrollViewer>
-                        <StackPanel>
-                            <TextBlock
-                           Text="{Binding TextSource,Converter={StaticResource Language},ConverterParameter=AboutConferenceApp, FallbackValue=AboutConferenceApp}"
-                            TextWrapping="Wrap"
-                            />
-                            <Controls:IconWithTextMenuItem
-                                    Margin="0,12,0,0"
-                                    Command="{Binding ContactSlodgeCommand}"
-                                    Text="{Binding TextSource,Converter={StaticResource Language},ConverterParameter=StuartLinkText, FallbackValue=StuartLinkText}"
-                                    Source="/ConfResources/Images/appbar.feature.email.rest.png"
-                                />
-                            <Controls:IconWithTextMenuItem
-                                    Margin="0,12,0,0"
-                                    Command="{Binding ContactGavinBryanCommand}"
-                                    Text="{Binding TextSource,Converter={StaticResource Language},ConverterParameter=GavinLinkText, FallbackValue=GavinLinkText}"
-                                    Source="/ConfResources/Images/appbar.feature.email.rest.png"
-                                />
-                        </StackPanel>
-                    </ScrollViewer>
-                </controls:PivotItem>
-                <controls:PivotItem 
-                    Header="{Binding TextSource,Converter={StaticResource Language},ConverterParameter=Conference, FallbackValue=DDDSW4}"
-                    >
+                    Header="{Binding TextSource,Converter={StaticResource Language},ConverterParameter=Conference, FallbackValue=Conference}">
                     <ScrollViewer>
                         <StackPanel>
                             <TextBlock
@@ -81,27 +56,24 @@
                         </StackPanel>
                     </ScrollViewer>
                 </controls:PivotItem>
-
                 <controls:PivotItem 
-                    Header="{Binding TextSource,Converter={StaticResource Language},ConverterParameter=ConferenceOrganisation, FallbackValue=ConferenceOrganisation}"
+                    Header="{Binding TextSource,Converter={StaticResource Language},ConverterParameter=ConferenceApp, FallbackValue=ConferenceApp}"
                     >
                     <ScrollViewer>
                         <StackPanel>
                             <TextBlock
-                           Text="{Binding TextSource,Converter={StaticResource Language},ConverterParameter=AboutConferenceOrganisation, FallbackValue=AboutConferenceOrganisation}"
+                           Text="{Binding TextSource,Converter={StaticResource Language},ConverterParameter=AboutConferenceApp, FallbackValue=AboutConferenceApp}"
                             TextWrapping="Wrap"
                             />
                             <Controls:IconWithTextMenuItem
-                                    Margin="0,24,0,0"
-                                    Command="{Binding ShowConferenceOrganisersCommand}"
-                                    Text="{Binding TextSource,Converter={StaticResource Language},ConverterParameter=ConferenceOrganisationLinkText, FallbackValue=ConferenceLinkText}"
-                                    Source="/ConfResources/Images/appbar.link.png"
+                                    Margin="0,12,0,0"
+                                    Command="{Binding ContactSlodgeCommand}"
+                                    Text="{Binding TextSource,Converter={StaticResource Language},ConverterParameter=StuartLinkText, FallbackValue=StuartLinkText}"
+                                    Source="/ConfResources/Images/appbar.feature.email.rest.png"
                                 />
-                            
                         </StackPanel>
                     </ScrollViewer>
                 </controls:PivotItem>
-
                 <controls:PivotItem 
                     Header="{Binding TextSource,Converter={StaticResource Language},ConverterParameter=MvvmCross, FallbackValue=MvvmCross}"
                     >

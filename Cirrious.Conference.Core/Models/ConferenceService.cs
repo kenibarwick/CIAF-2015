@@ -100,6 +100,7 @@ namespace Cirrious.Conference.Core.Models
         {
             var file = this.GetService<IMvxResourceLoader>().GetTextResource("ConfResources/Sponsors.txt");
             var items = JsonConvert.DeserializeObject<List<Sponsor>>(file);
+            // Sponsors = items.ToDictionary(x => x.Name);
             Sponsors = items.Where(x => x.Level != "Exhibitor").ToDictionary(x => x.Name);
             Exhibitors = items.Where(x => x.Level == "Exhibitor").ToDictionary(x => x.Name);
         }

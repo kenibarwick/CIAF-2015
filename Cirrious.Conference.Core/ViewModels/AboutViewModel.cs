@@ -1,3 +1,6 @@
+// TODO - Make this whole thing work with JSON
+
+
 using Cirrious.MvvmCross.Commands;
 using Cirrious.MvvmCross.Interfaces.Commands;
 
@@ -13,19 +16,19 @@ namespace Cirrious.Conference.Core.ViewModels
                 return
                     new MvxRelayCommand(
                         () =>
-                        ComposeEmail("me@slodge.com", "About MvvmCross and the DDD South West 4 app", "I've got a question"));
+                        ComposeEmail("me@slodge.com", "About MvvmCross and the SQL Bits app", "I've got a question"));
             }
         }
 
-        public IMvxCommand ContactGavinBryanCommand
+        public IMvxCommand ContactKeniCommand
         {
-          get
-          {
-            return
-                new MvxRelayCommand(
-                    () =>
-                    ComposeEmail("gavinbryan@hotmail.com", "About the DDD South West 4 app", "I've got a question"));
-          }
+            get
+            {
+                return
+                    new MvxRelayCommand(
+                        () =>
+                        ComposeEmail("keni@themobileguy.net", "About the Chilled in a Field app", "I've got a question"));
+            }
         }
 
         public IMvxCommand MvvmCrossOnGithubCommand
@@ -33,7 +36,9 @@ namespace Cirrious.Conference.Core.ViewModels
             get
             {
                 return
-                    new MvxRelayCommand(
+                    new
+
+                        MvxRelayCommand(
                         () =>
                         ShowWebPage("http://github.com/slodge/mvvmcross"));
             }
@@ -46,18 +51,7 @@ namespace Cirrious.Conference.Core.ViewModels
                 return
                     new MvxRelayCommand(
                         () =>
-                        ShowWebPage("http://www.chilledinafieldfestival.co.uk/"));
-            }
-        }
-
-        public IMvxCommand ShowConferenceOrganisersCommand
-        {
-            get
-            {
-                return
-                    new MvxRelayCommand(
-                        () =>
-                        ShowWebPage("http://www.developerdeveloperdeveloper.com"));
+                        ShowWebPage("http://chilledinafieldfestival.co.uk/"));
             }
         }
 
