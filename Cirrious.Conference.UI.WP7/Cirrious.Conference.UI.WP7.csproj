@@ -276,6 +276,10 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ConfResources\159Flip.png" />
+    <Content Include="ConfResources\356Tile.png" />
+    <Content Include="ConfResources\691Flip.png" />
+    <Content Include="ConfResources\AppLogo.png" />
     <Content Include="ConfResources\Images\appbar.map.png" />
     <Content Include="ConfResources\siteMap.jpg" />
     <Content Include="ConfResources\year.png" />
@@ -335,9 +339,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ApplicationIcon.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Background.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="ConfResources\Images\appbar.base.png" />
