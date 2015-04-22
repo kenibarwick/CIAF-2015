@@ -13,7 +13,7 @@ namespace Cirrious.Conference.Core.ViewModels
         public string LocationWebPage { get { return "http://www.chilledinafieldfestival.co.uk/the-location.html"; } }
 
         public string Phone { get { return "+44 (0)7795 666588"; } }
-        public string Email { get { return "it@chilledinafieldfestival.co.uk"; } }
+        public string Email { get { return "contact@chilledinafieldfestival.co.uk"; } }
         public double Latitude { get { return 50.923427; } }
         public double Longitude { get { return 0.112631; } }
 
