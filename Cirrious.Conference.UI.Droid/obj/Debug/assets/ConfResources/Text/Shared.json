@@ -1,8 +1,8 @@
 ﻿{
-"AppTitle":"DDD SW 4",
-"SmallDetailsFormat":"{0} in {1} at {2:h:mm}",
-"TypeAndLevelFormat":"{0}",
-"WhenAndWhereFormat":"{2:h:mm} in room {1}",
+"AppTitle":"Chilled in a Field",
+"SmallDetailsFormat":"{0} at the {1} on {2:ddd HH:mm} until {2:ddd HH:mm}",
+"TypeAndLevelFormat":"{0}, Level {1}",
+"WhenAndWhereFormat":"{3:ddd HH:mm} at the {2} until {4:ddd HH:mm}",
 "TimeAgo.JustNow":"just now",
 "TimeAgo.SecondsAgo":"{0}s ago",
 "TimeAgo.MinutesAgo":"{0}m ago",
@@ -13,5 +13,7 @@
 "Error.NoNetwork":"Sorry - no network for tweets right now",
 "Error.Twitter":"Sorry - whale fail",
 "HoldToRefresh":"Hold to refresh",
-"Share":"Share"
+"Share":"Share",
+"Latitude":"50.923427",
+"Longitude":"0.112631"
 }

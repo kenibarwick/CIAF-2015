@@ -12,7 +12,6 @@ C:\code\MvvmCrossConference-master\Cirrious.Conference.UI.WP7\obj\Debug\Views\Ho
 C:\code\MvvmCrossConference-master\Cirrious.Conference.UI.WP7\obj\Debug\Views\SessionListView.g.cs
 C:\code\MvvmCrossConference-master\Cirrious.Conference.UI.WP7\obj\Debug\Views\SplashScreenView.g.cs
 C:\code\2015\Cirrious.Conference.UI.WP7\Bin\Debug\ApplicationIcon.png
-C:\code\2015\Cirrious.Conference.UI.WP7\Bin\Debug\Background.png
 C:\code\2015\Cirrious.Conference.UI.WP7\Bin\Debug\Cirrious.Conference.UI.WP7.dll
 C:\code\2015\Cirrious.Conference.UI.WP7\Bin\Debug\Cirrious.Conference.UI.WP7.pdb
 C:\code\2015\Cirrious.Conference.UI.WP7\Bin\Debug\AppManifest.xaml
@@ -44,6 +43,8 @@ C:\code\2015\Cirrious.Conference.UI.WP7\obj\Debug\App.g.cs
 C:\code\2015\Cirrious.Conference.UI.WP7\obj\Debug\Controls\ExtendedListBox.g.cs
 C:\code\2015\Cirrious.Conference.UI.WP7\obj\Debug\Controls\IconWithTextMenuItem.g.cs
 C:\code\2015\Cirrious.Conference.UI.WP7\obj\Debug\Views\AboutView.g.cs
+C:\code\2015\Cirrious.Conference.UI.WP7\obj\Debug\Views\ExhibitionView.g.cs
+C:\code\2015\Cirrious.Conference.UI.WP7\obj\Debug\Views\SiteMapView.g.cs
 C:\code\2015\Cirrious.Conference.UI.WP7\obj\Debug\Views\UpdateView.g.cs
 C:\code\2015\Cirrious.Conference.UI.WP7\obj\Debug\Views\SponsorsView.g.cs
 C:\code\2015\Cirrious.Conference.UI.WP7\obj\Debug\Views\SessionView.g.cs
@@ -58,5 +59,3 @@ C:\code\2015\Cirrious.Conference.UI.WP7\obj\Debug\Cirrious.Conference.UI.WP7.g.r
 C:\code\2015\Cirrious.Conference.UI.WP7\obj\Debug\Cirrious.Conference.UI.WP7.dll
 C:\code\2015\Cirrious.Conference.UI.WP7\obj\Debug\Cirrious.Conference.UI.WP7.pdb
 C:\code\2015\Cirrious.Conference.UI.WP7\obj\Debug\XapCacheFile.xml
-C:\code\2015\Cirrious.Conference.UI.WP7\obj\Debug\Views\ExhibitionView.g.cs
-C:\code\2015\Cirrious.Conference.UI.WP7\obj\Debug\Views\SiteMapView.g.cs

@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Deployment xmlns="http://schemas.microsoft.com/windowsphone/2012/deployment" AppPlatformVersion="8.0">
   <DefaultLanguage xmlns="" code="" />
-  <App xmlns="" ProductID="{5DF2F836-5914-4C16-80C7-F3B6099EF7BF}" Title="DDD SW 4" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="Cirrious.Conference.UI.WP7 author" Description="Sample description" Publisher="Cirrious.Conference.UI.WP7" BitsPerPixel="32" PublisherID="{6780a37b-2bc4-43e4-bfe0-a25270fe8200}">
-    <IconPath IsRelative="true" IsResource="false">ApplicationIcon.png</IconPath>
+  <App xmlns="" ProductID="{5DF2F836-5914-4C16-80C7-F3B6099EF7BF}" Title="Chilled in a Field" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="Cirrious.Conference.UI.WP7 author" Description="Get your up to date information on the award winning festival - Chilled in a Field -  here" Publisher="Cirrious.Conference.UI.WP7" BitsPerPixel="32" PublisherID="{6780a37b-2bc4-43e4-bfe0-a25270fe8200}">
+    <IconPath IsRelative="true" IsResource="false">ConfResources\AppLogo.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_GAMERSERVICES" />
       <Capability Name="ID_CAP_IDENTITY_DEVICE" />
@@ -27,15 +27,18 @@
     <Tokens>
       <PrimaryToken TokenID="Cirrious.Conference.UI.WP7Token" TaskName="_default">
         <TemplateFlip>
-          <SmallImageURI IsResource="false" IsRelative="true">Background.png</SmallImageURI>
+          <SmallImageURI IsResource="false" IsRelative="true">ConfResources\159Flip.png</SmallImageURI>
           <Count>0</Count>
-          <BackgroundImageURI IsResource="false" IsRelative="true">Background.png</BackgroundImageURI>
-          <Title>DDD SW 4</Title>
+          <BackgroundImageURI IsResource="false" IsRelative="true">ConfResources\356Tile.png</BackgroundImageURI>
+          <Title>Chilled in a Field</Title>
           <BackContent></BackContent>
           <BackBackgroundImageURI></BackBackgroundImageURI>
           <BackTitle></BackTitle>
+          <LargeBackgroundImageURI IsRelative="true" IsResource="false">ConfResources\691Flip.png</LargeBackgroundImageURI>
+          <LargeBackContent />
+          <LargeBackBackgroundImageURI IsRelative="true" IsResource="false"></LargeBackBackgroundImageURI>
           <DeviceLockImageURI></DeviceLockImageURI>
-          <HasLarge>false</HasLarge>
+          <HasLarge>True</HasLarge>
         </TemplateFlip>
       </PrimaryToken>
     </Tokens>

@@ -19,7 +19,7 @@ namespace Cirrious.Conference.Core.ViewModels.HomeViewModels
         , IMvxServiceConsumer<ITwitterSearchProvider>
         , IMvxServiceConsumer<IMvxReachability>
     {
-        private const string SearchTerm = "dddsw";
+        private const string SearchTerm = "ciaf2015";
 
         private ITwitterSearchProvider TwitterSearchProvider
         {
@@ -126,11 +126,11 @@ namespace Cirrious.Conference.Core.ViewModels.HomeViewModels
             if (guessTwitterNameEnds > 0)
             {
                 var guessTwitterName = tweet.Author.Substring(0, guessTwitterNameEnds);
-                ExceptionSafeShare("@" + guessTwitterName + " #dddsw");
+                ExceptionSafeShare("@" + guessTwitterName + " #chilledinafield");
             }
             else
             {
-                ExceptionSafeShare("@" + tweet.Author + " #dddsw");
+                ExceptionSafeShare("@" + tweet.Author + " #chilledinafield");
             }
         }
     }

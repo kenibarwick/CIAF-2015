@@ -14,6 +14,7 @@ namespace Cirrious.Conference.Core.Models.Raw
         public string RoomName { get; set; }
         public string TrackName { get; set; }
         public string SlotId { get; set; }
+        public int Day { get; set; }
 
         [JsonIgnore]
         public Slot Slot { get; set; }

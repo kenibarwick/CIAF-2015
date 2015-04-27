@@ -36,8 +36,12 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
-    <AndroidLinkMode>SdkOnly</AndroidLinkMode>
-    <EmbedAssembliesIntoApk>true</EmbedAssembliesIntoApk>
+    <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
+    <AndroidKeyStore>True</AndroidKeyStore>
+    <AndroidSigningKeyStore>C:\Users\Stuart\AppData\Local\Xamarin\Mono for Android\CirriousRelease.keystore</AndroidSigningKeyStore>
+    <AndroidSigningStorePass>Hidden - bad luck</AndroidSigningStorePass>
+    <AndroidSigningKeyAlias>CirriousRelease</AndroidSigningKeyAlias>
+    <AndroidSigningKeyPass>Hidden - bad luck</AndroidSigningKeyPass>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Release'">
     <AndroidKeyStore>True</AndroidKeyStore>
@@ -178,6 +182,9 @@
     <AndroidResource Include="Resources\Layout\Page_About.axml" />
     <AndroidResource Include="Resources\Layout\Page_Team.axml" />
     <AndroidResource Include="Resources\Layout\Page_Update.axml" />
+    <AndroidResource Include="..\..\MvvmCrossConference-master\Cirrious.Conference.UI.WP7\ConfResources\SQLBitsLogo.png">
+      <Link>Resources\Drawable\SQLBitsLogo.png</Link>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\Layout\SplashScreen.axml" />
@@ -187,12 +194,6 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\Drawable\Icon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Cirrious.Conference.Core\Cirrious.Conference.Core.Droid.csproj">
-      <Project>{F178AF32-A329-4991-96A0-260A48BD7E8B}</Project>
-      <Name>Cirrious.Conference.Core.Droid</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <AndroidAsset Include="..\Cirrious.Conference.UI.WP7\ConfResources\Sessions.txt">
@@ -259,9 +260,6 @@
   <ItemGroup>
     <AndroidResource Include="..\Cirrious.Conference.UI.WP7\ConfResources\background.png">
       <Link>Resources\Drawable\background.png</Link>
-    </AndroidResource>
-    <AndroidResource Include="..\Cirrious.Conference.UI.WP7\ConfResources\SQLBitsLogo.png">
-      <Link>Resources\Drawable\SQLBitsLogo.png</Link>
     </AndroidResource>
     <AndroidAsset Include="..\Cirrious.Conference.UI.WP7\ConfResources\Team.txt">
       <Link>Assets\ConfResources\Team.txt</Link>

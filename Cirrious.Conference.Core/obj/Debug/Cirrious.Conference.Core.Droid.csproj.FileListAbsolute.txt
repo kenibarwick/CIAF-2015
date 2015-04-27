@@ -11,3 +11,5 @@ C:\code\MvvmCrossConference-master\Cirrious.Conference.Core\obj\Debug\Cirrious.C
 C:\code\MvvmCrossConference-master\Cirrious.Conference.Core\obj\Debug\android\bin\Cirrious.Conference.Core.Droid.apk
 C:\code\MvvmCrossConference-master\Cirrious.Conference.Core\obj\Debug\R.cs.flag
 C:\code\MvvmCrossConference-master\Cirrious.Conference.Core\obj\Debug\uploadflags.txt
+C:\code\2015\Cirrious.Conference.Core\obj\Debug\Cirrious.Conference.Core.Droid.csprojResolveAssemblyReference.cache
+C:\code\2015\Cirrious.Conference.Core\obj\Debug\Cirrious.Conference.Core.Droid.dll

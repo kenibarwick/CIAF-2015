@@ -1,4 +1,4 @@
-﻿<Properties StartupItem="Cirrious.Conference.UI.Touch\Cirrious.Conference.UI.Touch.csproj">
+﻿<Properties StartupItem="Cirrious.Conference.Core\Cirrious.Conference.Core.WP7.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Distribution|iPhone" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Cirrious.Conference.UI.WP7\ConfResources\Text\Shared.json">
     <Files>

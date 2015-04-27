@@ -8,6 +8,6 @@ namespace Cirrious.Conference.UI.WP7
 {
     class Private
     {
-        public static string BingKey { get; set; }
+        public static string BingKey = "ApmRRL5M8_S-N3q3B9RJIZ4rEk0TuYxjfn_2wTHsOT2QZJxGWewDXUrEpn6R6zpI";
     }
 }

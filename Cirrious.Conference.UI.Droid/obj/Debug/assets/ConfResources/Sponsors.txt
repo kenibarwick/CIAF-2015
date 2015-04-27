@@ -1,147 +1,90 @@
 ﻿[
-{
-"Name":"Microsoft"
-,"DisplayOrder": 1
-,"Url":"http://www.microsoft.com/en-gb/default.aspx"
-,"Image":"ms-logo-YPOP-BR160.png"
-,"Level":"Premium"
-,"Description":"Microsoft is proud to be supporting the first DDD South West event in May 2009.  Through the support of open community events such as DDD, Microsoft hopes to help developers and businesses from all walks of life, realise their potential.  If you are interested in finding out more about other community events that Microsoft supports, please visit our website, or contact us here."
-},
-{
-"Name":"University of the West of England"
-,"DisplayOrder": 2
-,"Url":"http://www.uwe.ac.uk/"
-,"Image":"UWELogoLarge160.png"
-,"Level":"Premium"
-,"Description":"The University of the West of England (UWE) is a modern, growing university in the thriving harbourside city of Bristol. UWE Bristol is one of Britain's most popular universities, with around 30,000 students and 3,000 staff and is the largest provider of Higher Education in the South West of England. Students come to UWE from all parts of the UK, as well as a significant and growing number of international students from over 50 countries worldwide."
-},
-{
-"Name":"eGroup"
-,"DisplayOrder": 3
-,"Url":"http://www.egroupltd.co.uk/"
-,"Image":"eDevelopment160.png"
-,"Level":"Premium"
-,"Description":"One of the fastest growing direct insurance businesses in the UK.
-
-eGroup insure cars, homes, vans and bikes which are underwritten by Norwich Union and Southern Rock.
-
-We also sell a huge range of commercial products including eTradesman, eBusinessCar, eGoodsInTransit, eOffice, eShop and eSurgery."
-},
-{
-"Name":"PlanetRecruit"
-,"DisplayOrder": 4
-,"Url":"http://www.planetrecruit.com/?wt.mc_id=TE_PR_DDD"
-,"Image":"PlanetRecruit160.jpg"
-,"Level":"Premium"
-,"Description":"Trinity Mirror Digital Recruitment is a portfolio of specialist market-leading jobsites attracting candidates across a range of industry verticals including totallylegal (lawyers), PlanetRecruit (IT professionals), The Career Engineer, SecsintheCity (secretaries) and GAAPweb (accountancy and finance professionals).
-
-Trinity Mirror Digital Recruitment has over 3.5 million registered candidates across its portfolio of sites and receives over 1.8 million visits, 3.3 million searches and 443,000 applications a month."
-},
-{
-"Name":"Telerik"
-,"DisplayOrder": 5
-,"Url":"http://www.telerik.com/"
-,"Image":"telerik_logo_RGB_photoshop160.png"
-,"Level":"Premium"
-,"Description":"Telerik’s mission is to make software development easier and more enjoyable. Our tools for agile project management, collaboration, development and testing allow companies of all sizes to create richer, more stable and aesthetic software faster than ever before. Trusted by over 100,000 customers worldwide for our devotion to quality and customer care, Telerik helps technical and business professionals maximize their productivity and 'deliver more than expected' every day.
-
-As true craftsmen, we don't believe in compromises and our goal is to only release tools that we can be proud of."
-},
-{
-"Name":"Gibraltar Software"
-,"DisplayOrder": 6
-,"Url":"http://www.gibraltarsoftware.com/"
-,"Image":"GibraltarSoftware160.png"
-,"Level":"Premium"
-,"Description":"Gibraltar Software writes .NET developer tools to help you build rock-solid .NET software.
-
-Our flagship product, Gibraltar, provides advanced logging & analysis of errors, performance and usage patterns for all .NET applications including WinForms, WPF, ASP.NET, WCF, Silverlight, and Win32 services. With Gibraltar you can know about every unique error that happens in production, continuously monitor your apps for performance bottlenecks and make development decisions based on hard data about what features are and aren't important to your customers.
-
-We are also the guys behind VistaDB, an embedded SQL database engine for .NET applications that offers significant deployment advantages over Microsoft SQL Compact Edition, Microsoft SQL Server Express, Microsoft Access and other lightweight database alternatives. For example, VistaDB is the only .NET embedded database that allows Xcopy deployment of a single DLL for both 32 and 64 bit runtime support."
-},
-{
-"Name":"PluralSight"
-,"DisplayOrder": 7
-,"Url":"http://www.pluralsight-training.net/microsoft/"
-,"Image":"pluralsight160.png"
-,"Level":"Premium"
-,"Description":"Pluralsight is the global leader in high-quality online training for hardcore developers. The revolutionary Pluralsight training library provides developers with instant access to a rich collection of online training courses delivered by industry authorities. See what you can learn at pluralsight.com and join the @pluralsight community on Twitter."
-},
-{
-"Name":"JetBrains"
-,"DisplayOrder": 8
-,"Url":"http://www.jetbrains.com/"
-,"Image":"jetbrains160.png"
-,"Level":"Premium"
-,"Description":"World's Leading Vendor of Professional Development Tools"
-},
-{
-"Name":"Redgate"
-,"DisplayOrder": 9
-,"Url":"http://www.red-gate.com/"
-,"Image":"RedGate160.png"
-,"Level":"Premium"
-,"Description":"Red Gate Software makes ingeniously simple tools for over 500,000 Microsoft technology professionals working with SQL Server, .NET, and Exchange Server. The company’s product line includes must-have tools for .NET developers who program in C# or VB.NET. Zero in on memory leaks, rapidly – Download your free trial of ANTS Memory Profiler."
-},
-{
-"Name":"TechSmith"
-,"DisplayOrder": 10
-,"Url":"http://www.techsmith.com/"
-,"Image":"TechSmith-Logo-Primary160.png"
-,"Level":"Premium"
-,"Description":"TechSmith’s screen capture and recording software products provide a powerful platform for capturing and sharing desktop content. Using TechSmith’s tools for developers, you can integrate the power of our capture and recording technologies into Windows applications of your own."
-},
-{
-"Name":"Landmark Information Group"
-,"DisplayOrder": 11
-,"Url":"http://www.landmark.co.uk/"
-,"Image":"Landmark1160.png"
-,"Level":"Premium"
-,"Description":"Landmark Information Group
-
-Empowering people with information.
-
-Landmark's success has been founded on creating innovative products and information services by combining and consolidating a variety of environmental and geographical datasets for use by our customers. Underpinning the business is a large and vibrant development team using a broad range of technologies where every new product or enhancement goes through a rigorous development process to ensure it is fit for purpose. This includes customer feedback, feasibility studies, business cases, user consultation and effective implementation cycles that enable Landmark to react quickly to the needs of the market."
-},
-{
-"Name":"ComponentOne"
-,"DisplayOrder": 12
-,"Url":"http://www.componentone.com/"
-,"Image":"ComponentOne160.png"
-,"Level":"Premium"
-,"Description":"ComponentOne provides hundreds of developer productivity tools to build enterprise-level applications for the desktop, Web, and mobile devices. With ComponentOne's flagship product, Studio Enterprise, Microsoft Visual Studio developers spend less time coding and more time focusing on business logic. From grids, charts, reports, and schedulers to PDF viewers, editors, and more UI controls, you get added functionality, professional looking styling, and effortless deployment. This is why developers, just like you, turn to ComponentOne. Visit www.componentone.com."
-},
-{
-"Name":"Mindscape"
-,"DisplayOrder": 13
-,"Url":"http://www.mindscapehq.com/"
-,"Image":"Mindscape160.jpg"
-,"Level":"Premium"
-,"Description":"Mindscape was created with the aim of delivering great tools and components, to help developers be the best developers they can be. We build LightSpeed (.NET ORM) as well as products for WPF, Silverlight, SimpleDB & NHibernate. Professional .NET tools that are useful, simple and more convenient to use."
-},
-{
-"Name":"TypeMock"
-,"DisplayOrder": 14
-,"Url":"http://www.typemock.com/"
-,"Image":"TypeMock160.png"
-,"Level":"Premium"
-,"Description":"Typemock was conceived in 2004 to help programmers develop code integrity through unit testing. Since the launch of the first version of Typemock Isolator in 2006, thousands of companies around the world, including multinationals Microsoft and Nokia, use Typemock tools to make unit testing easy. Typemock users are developers from a wide range of sectors – such as defense, medical, and finance – that demand exceptionally high standards of quality and minimum errors. Isolator supports the easy unit testing of Silverlight, WCF, and all other .NET and C++ technologies."
-},
-{
-"Name":"CODE Magazine"
-,"DisplayOrder": 15
-,"Url":"http://www.codemag.com/"
-,"Image":"CODEMagazine160.png"
-,"Level":"Premium"
-,"Description":"CODE Magazine is an advanced technology publication for developers and technical managers focused on providing in-depth information about today's development topics. Each bi-monthly issue of CODE Magazine contains detailed and very practical articles of current technologies and developer tools. Created by developers and primarily serving the developer community, CODE Magazine is the trusted source of information for developers seeking information for their latest software development projects.
-CODE Magazine has one primary goal: provide the IT community with advanced technology information that explains in-depth how to use the industry’s diverse development tools. Since its inception, CODE Magazine has focused on technologies and application architecture 'best practices' illustrating them with examples in multiple programming languages. www.codemag.com"
-},
-{
-"Name":"LogicNP Software"
-,"DisplayOrder": 16
-,"Url":"http://www.ssware.com/"
-,"Image":"LogicNP160.png"
-,"Level":"Premium"
-,"Description":"LogicNP Software specializes in the development of developer-centric software products such as reusable controls, components and libraries for .Net, WPF, ActiveX and MFC/ATL developers. Our mission is to provide innovative, developer-friendly, robust and easy-to-use software that helps developers build the best applications that today's competitive marketplace demands. Our products are used by thousands of large corporations, multi-national companies, consultants, ISVs and professionals from all over the world working in finance, government, military, education, technology, health, insurance, consulting and more."
-}
+{"DisplayOrder": 1,"Name":"Band de Jour","URL":"http://www.banddejour.com/","Image":"bdj.png","Level":"Premium","Description":"Bringing their energetic style to perform anthems from the likes of Kings of Leon, Killers, Kasabian and many other bands that don't all begin with a K. Bring your dancing shoes, your singalong voice and get ready to party!"},
+{"DisplayOrder": 1,"Name":"Burnsright","URL":"https://www.facebook.com/burnsrightband","Image":"burnsright.png","Level":"Premium","Description":"Get your groove on with this strong folksy blues-influenced group.  Try as you might you're going to be dancing along to their great grooves."},
+{"DisplayOrder": 1,"Name":"CIAF Choir","URL":"http://www.chilledinafieldfestival.co.uk/","Image":"ciaf2014.png","Level":"Premium","Description":"Come listen to our own in house singers"},
+{"DisplayOrder": 1,"Name":"Custard","URL":"https://soundcloud.com/thecustard","Image":"custard.png","Level":"Premium","Description":"Some Trance, Progressive Trance, Uplifting Trance and Uplifting House for your delectation. Classic sounds to help you rave the night away."},
+{"DisplayOrder": 1,"Name":"DanDoodle","URL":"https://soundcloud.com/dannyshort-2","Image":"dand.png","Level":"Premium","Description":"Playing a combo of 20s, 30s + 40s swing sounds and contemporary EDM. He's been kicking off dance floors for quite some time now (he's old enough to know better!) Come and have a boogie to some banging vintage beats"},
+{"DisplayOrder": 1,"Name":"Deviant","URL":"https://soundcloud.com/deviant-inc","Image":"deviant.png","Level":"Premium","Description":"A fine selection of Breakbeat, Big Bass Party Breakz, and some Drum'n'Bass to get you up and moving!"},
+{"DisplayOrder": 1,"Name":"Dialog","URL":"https://soundcloud.com/dialog","Image":"dialog.png","Level":"Premium","Description":"Rousing you from your slumber with some tasty floaty breakfast beats."},
+{"DisplayOrder": 1,"Name":"DJ Competition Winner","URL":"http://www.headspacestores.com/home","Image":"head.png","Level":"Premium","Description":"Head Space competion winner"},
+{"DisplayOrder": 1,"Name":"Fiend Reflex","URL":"https://soundcloud.com/fiendreflex","Image":"fiends.png","Level":"Premium","Description":"This is your man if you like a mixture, Drum'n'Bass, Breakbeat, Dubstep, Electro, House and more!"},
+{"DisplayOrder": 1,"Name":"Grizzly & The Grasshoppers","URL":"http://www.grizzlyandthegrasshoppers.com/new","Image":"gandg.png","Level":"Premium","Description":"This rootsy, bluesy and very hairy band of music makers and troubadours will be in residence."},
+{"DisplayOrder": 1,"Name":"Ibiza Choonz","URL":"http://www.mixcloud.com/IbizaChoons/","Image":"ic.png","Level":"Premium","Description":"Says what is is on the tin! Get ready for the return of Balearic Funky House beats, a chilled vibe and electro-house anthems."},
+{"DisplayOrder": 1,"Name":"Indigo Stars","URL":"http://www.chilledinafieldfestival.co.uk/","Image":"is.png","Level":"Premium","Description":"Another Chilled in a Field Festival favourite back to charm your heart with beautiful vocals and an acoustic guitar."},
+{"DisplayOrder": 1,"Name":"Keni.DJ","URL":"http://www.keni.dj","Image":"keni.png","Level":"Premium","Description":"Captain Hectic presents: keni.dj - He plays an eclitic, but not hectic, mix of house and psy on the progressive side of life."},
+{"DisplayOrder": 1,"Name":"Luli","URL":"http://waxdj.com/djs/5067/","Image":"luli.png","Level":"Premium","Description":"Enjoy some Tech House and House from this great new addition to our DJ lineup"},
+{"DisplayOrder": 1,"Name":"Nibbler","URL":"http://www.chilledinafieldfestival.co.uk/","Image":"nib.png","Level":"Premium","Description":"Returning to entertain and relax you with his unique, chilled, yet uplifting global-inspired vibes."},
+{"DisplayOrder": 1,"Name":"PLUM Live","URL":"http://www.plumtunes.com/","Image":"plum.png","Level":"Premium","Description":"Come check out the dark and glitchy left-field electro-pop beats of Scotland's 'Best Electronic Act' (SAMA 2013). A female solo act, Plum is a bit of a mad scientist on stage, so get your dancing shoes at the ready and get involved!"},
+{"DisplayOrder": 1,"Name":"Poppy Janella","URL":"https://www.facebook.com/poppyjanella","Image":"poppy.png","Level":"Premium","Description":"We're very excited to be hosting another talented artist's debut performance, come and experience Poppy's gorgeous covers."},
+{"DisplayOrder": 1,"Name":"Robyn Keen","URL":"https://www.facebook.com/RobynKeenMusic","Image":"robyn.png","Level":"Premium","Description":"Prepare for the return of the wonderful Robyn, back to make you smile with her unique relaxed and laid back style!"},
+{"DisplayOrder": 1,"Name":"Saturday Sun","URL":"http://saturdaysun.get-ctrl.com/","Image":"satsun.png","Level":"Premium","Description":"Come and feel the acoustic melodies ebbing and flowing with this mesmerising band joining us for the first time this year."},
+{"DisplayOrder": 1,"Name":"She Drew The Gun","URL":"http://www.shedrewthegun.com/","Image":"shedrew.png","Level":"Premium","Description":"Yes this fantastic lady with the guitar is back by popular demand."},
+{"DisplayOrder": 1,"Name":"Silver Back","URL":"http://www.chilledinafieldfestival.co.uk/","Image":"silver.png","Level":"Premium","Description":"A chillout legend with and eclectic sound getting you ready for Sunday afternoon in the field"},
+{"DisplayOrder": 1,"Name":"SMILE for The Big Festival Photo","URL":"http://www.chilledinafieldfestival.co.uk/","Image":"photo.png","Level":"Premium","Description":"Watch the birdy *tweet* *tweet*"},
+{"DisplayOrder": 1,"Name":"Tailor Birds","URL":"http://tailorbirds.bandcamp.com/","Image":"tailorbirds.png","Level":"Premium","Description":"They'll be bringing their crossover of electronic, experimental and classical sounds, moving between instrumental tracks, and beautiful ballads."},
+{"DisplayOrder": 1,"Name":"Tequilla Slammer","URL":"http://www.djtequila.com/","Image":"tequilla.png","Level":"Premium","Description":"With PsyBreaks and uplifting classics we are very very pleased to welcome Tequila Slammer back to the Field!"},
+{"DisplayOrder": 1,"Name":"The Buffalo Skinners","URL":"http://www.thebuffaloskinners.com/","Image":"bufskin.png","Level":"Premium","Description":"Described as a folk-punk-blues-riot this bouncy band will have you dancing around the field"},
+{"DisplayOrder": 1,"Name":"The Cardigan Pimps","URL":"https://www.facebook.com/TheCardiganPimps","Image":"cardiganpimps.png","Level":"Premium","Description":"Relive the great indie sounds of the 1990s with this fantastic group"},
+{"DisplayOrder": 1,"Name":"Tribe of Tinkers","URL":"https://www.youtube.com/user/TribeOfTinkers","Image":"totciaf.png","Level":"Premium","Description":"Well it just wouldn't be Chilled in a Field Festival without the sound of this amazing 8-piece folk getting our feet a-stompin'"},
+{"DisplayOrder": 1,"Name":"U-4-I-C","URL":"http://www.global-trance.co.uk/fr_index.html?/U-4-IC.html","Image":"u4ic.png","Level":"Premium","Description":"The legend that is U4IC makes his Chilled debut, we are so lucky! O and if you've not worked it out yet U-4-IC is a phonetic pronunciation of 'Euphoric'."},
+{"DisplayOrder": 1,"Name":"Voodoo","URL":"https://soundcloud.com/voodootronix","Image":"voodoo.png","Level":"Premium","Description":"Roll up, roll up! He's here and ready to get you dancing with some seriously euphoric drum'n'bass!"},
+{"DisplayOrder": 1,"Name":"Wheel of Genres","URL":"http://www.chilledinafieldfestival.co.uk/","Image":"wog.png","Level":"Premium","Description":"The Wheel of Genres will make a welcome return."},
+{"DisplayOrder": 1,"Name":"Giles-Y","URL":"https://soundcloud.com/giles-y/","Image":"wog.png","Level":"Premium","Description":"The Wheel of Genres will make a welcome return."},
+{"DisplayOrder": 1,"Name":"The One Trick Pony Sound System","URL":"https://www.facebook.com/OneTrickPonySoundSystem","Image":"wog.png","Level":"Premium","Description":"The Wheel of Genres will make a welcome return."},
+	{	
+		"DisplayOrder": 1,
+		"Name":"The Bar",
+		"Url":"http://www.chilledinafieldfestival.co.uk/the-venues.html",
+		"Image":"bar.png",
+		"Level":"Exhibitor",
+		"Description":"Fine Local Ales, Cider, Wine, Cocktails………… Is it a bar or a mini beer festival?"
+	},
+	{		
+		"DisplayOrder": 1,
+		"Name":"Main Stage",
+		"Url":"http://www.chilledinafieldfestival.co.uk/the-venues.html",
+		"Image":"stage.png",
+		"Level":"Exhibitor",
+		"Description":"We're proud to introduce the Chilled in a Field Festival Stage - taking music out from under cover and into the field where it belongs!"	
+	},
+	{		
+		"DisplayOrder": 1,
+		"Name":"The Woods",
+		"Url":"http://www.chilledinafieldfestival.co.uk/the-venues.html",
+		"Image":"woods.png",
+		"Level":"Exhibitor",
+		"Description":"Woods area"	
+	},
+	{	
+		"DisplayOrder": 1,
+		"Name":"The Activitree",
+		"Url":"http://www.chilledinafieldfestival.co.uk/the-venues.html",
+		"Image":"tree.png",
+		"Level":"Exhibitor",
+		"Description":""
+	},
+	{		
+		"DisplayOrder": 1,
+		"Name":"Tea Tent",
+		"Url":"http://www.chilledinafieldfestival.co.uk/the-venues.html",
+		"Image":"tea.png",
+		"Level":"Exhibitor",
+		"Description":""	
+	},
+	{		
+		"DisplayOrder": 1,
+		"Name":"Play Tent",
+		"Url":"http://www.chilledinafieldfestival.co.uk/the-venues.html",
+		"Image":"play.png",
+		"Level":"Exhibitor",
+		"Description":""	
+	},
+	{	
+		"DisplayOrder": 1,
+		"Name":"The Field",
+		"Url":"http://www.chilledinafieldfestival.co.uk/the-venues.html",
+		"Image":"field.png",
+		"Level":"Exhibitor",
+		"Description":""	
+	}
 ]

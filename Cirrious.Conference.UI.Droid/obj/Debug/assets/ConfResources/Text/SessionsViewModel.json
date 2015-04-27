@@ -1,8 +1,10 @@
 ﻿{
-"ByTime":"By time:",
-"ByTopic":"By topic:",
-"BySpeaker":"By speaker:",
-"Saturday":"Saturday",
-"Speakers":"Speakers",
-"Topics":"Topics"
+"ByDay":"By day:",
+"ByTopic":"By location:",
+"BySpeaker":"By artist:",
+"Day1":"Friday",
+"Day2":"Saturday",
+"Day3":"Sunday",
+"Speakers":"Artists",
+"Topics":"Venue"
 }
