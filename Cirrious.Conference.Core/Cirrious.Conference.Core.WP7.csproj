@@ -96,6 +96,9 @@
     <Reference Include="Newtonsoft.Json, Version=4.0.8.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\Libs\WP7\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="RestSharp.WindowsPhone">
+      <HintPath>..\packages\RestSharp.105.1.0\lib\windowsphone8\RestSharp.WindowsPhone.dll</HintPath>
+    </Reference>
     <Reference Include="WriteableBitmapExWinPhone, Version=0.9.8.6, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\Libs\WP7\WriteableBitmapExWinPhone.dll</HintPath>
     </Reference>
@@ -132,6 +135,7 @@
     <Compile Include="Models\Raw\Slot.cs" />
     <Compile Include="Models\Raw\Team.cs" />
     <Compile Include="Models\Raw\Track.cs" />
+    <Compile Include="Models\SessionData.cs" />
     <Compile Include="Models\SessionWithFavoriteFlag.cs" />
     <Compile Include="Models\Raw\Sponsor.cs" />
     <Compile Include="Models\Twitter\AtomConst.cs" />
@@ -177,6 +181,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).CSharp.targets" />

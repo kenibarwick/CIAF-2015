@@ -1,8 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
-using System.Collections.Generic;
 using System.Net;
+using System.Threading;
 using Cirrious.Conference.Core.Interfaces;
 using Cirrious.Conference.Core.Models.Raw;
 using Cirrious.MvvmCross.Core;
@@ -10,18 +11,19 @@ using Cirrious.MvvmCross.ExtensionMethods;
 using Cirrious.MvvmCross.Interfaces.Localization;
 using Cirrious.MvvmCross.Interfaces.Platform;
 using Cirrious.MvvmCross.Interfaces.ServiceProvider;
-using Cirrious.MvvmCross.ViewModels;
 using Newtonsoft.Json;
+using RestSharp;
 
 namespace Cirrious.Conference.Core.Models
 {
     public class ConferenceService
         : IConferenceService
-          , IMvxServiceConsumer<IMvxResourceLoader>
-          , IMvxServiceConsumer<IMvxSimpleFileStoreService>
+            , IMvxServiceConsumer<IMvxResourceLoader>
+            , IMvxServiceConsumer<IMvxSimpleFileStoreService>
     {
         private readonly FavoritesSaver _favoritesSaver = new FavoritesSaver();
-
+        // a hashtable of favorites
+        private IDictionary<string, SessionWithFavoriteFlag> _favoriteSessions;
         // is loading setup
         private bool _isLoading;
 
@@ -35,23 +37,12 @@ namespace Cirrious.Conference.Core.Models
             }
         }
 
-        private void FireLoadingChanged()
-        {
-            var handler = LoadingChanged;
-            if (handler != null)
-                handler(this, EventArgs.Empty);
-        }
-
         public event EventHandler LoadingChanged;
-
         // the basic lists
         public IDictionary<string, SessionWithFavoriteFlag> Sessions { get; private set; }
         public IDictionary<string, Sponsor> Exhibitors { get; private set; }
         public IDictionary<string, Sponsor> Sponsors { get; private set; }
         public IDictionary<string, Team> Team { get; private set; }
-
-        // a hashtable of favorites
-        private IDictionary<string, SessionWithFavoriteFlag> _favoriteSessions;
 
         public IDictionary<string, SessionWithFavoriteFlag> GetCopyOfFavoriteSessions()
         {
@@ -67,13 +58,6 @@ namespace Cirrious.Conference.Core.Models
 
         public event EventHandler FavoritesSessionsChanged;
 
-        private void FireFavoriteSessionsChanged()
-        {
-            var handler = FavoritesSessionsChanged;
-            if (handler != null)
-                handler(this, EventArgs.Empty);
-        }
-
         public void BeginAsyncLoad()
         {
             IsLoading = true;
@@ -86,11 +70,25 @@ namespace Cirrious.Conference.Core.Models
             Load();
         }
 
+        private void FireLoadingChanged()
+        {
+            var handler = LoadingChanged;
+            if (handler != null)
+                handler(this, EventArgs.Empty);
+        }
+
+        private void FireFavoriteSessionsChanged()
+        {
+            var handler = FavoritesSessionsChanged;
+            if (handler != null)
+                handler(this, EventArgs.Empty);
+        }
+
         private void Load()
         {
             LoadSessions();
             LoadFavorites();
-            LoadSponsors();
+            // LoadSponsors();
             LoadTeam();
 
             IsLoading = false;
@@ -169,12 +167,90 @@ namespace Cirrious.Conference.Core.Models
 
         private void LoadSessions()
         {
+            // try to get the data from the service
+            var request = new RestRequest(@"/api/schedule");
+
+            var client = new RestClient("https://ciafadmin.herokuapp.com");
+
+            var loaded = false;
+
+            string contents;
+            this.GetService<IMvxSimpleFileStoreService>().TryReadTextFile("RESTDATA.json", out contents);
+
+            client.ExecuteAsyncGet(request, (response, handle) =>
+            {
+                // do something with the response.StatusCode and response.Stream
+                if (response.StatusCode == HttpStatusCode.OK)
+                {
+                    this.GetService<IMvxSimpleFileStoreService>().WriteFile("RESTDATA.json", response.Content);
+
+                    var data = JsonConvert.DeserializeObject<SessionData[]>(response.Content);
+
+                    this.ParseSponsors(data);
+
+                    this.ParseExhibitors(data);
+
+                    loaded = true;
+                }
+            }, "GET");
+
+            if (!loaded)
+            {
+                Thread.Sleep(500);
+            }
+
             PocketConferenceModel conferenceModel;
             if (!TryLoadSessionsFromStorage(out conferenceModel))
             {
                 conferenceModel = LoadSessionsFromResources();
             }
             LoadSessionsFromPocketConferenceModel(conferenceModel);
+        }
+
+        private void ParseExhibitors(SessionData[] data)
+        {
+            Exhibitors = new Dictionary<string, Sponsor>();
+            var i = 0;
+            foreach (var location in data.Select(sessionData => sessionData.location).Where(s => !string.IsNullOrEmpty(s)).Distinct())
+            {
+                if (!Exhibitors.ContainsKey(location))
+                {
+                    Exhibitors.Add(location,
+                        new Sponsor
+                        {
+                            Description = location,
+                            DisplayOrder = i,
+                            Level = "Premium",
+                            Name = location,
+                            Image = "",
+                            Url = ""
+                        });
+                }
+                i++;
+            }
+        }
+
+        private void ParseSponsors(SessionData[] data)
+        {
+            Sponsors = new Dictionary<string, Sponsor>();
+            var i = 0;
+            foreach (var sessionData in data.Where(sessionData => !string.IsNullOrEmpty(sessionData.name)))
+            {
+                if (!Sponsors.ContainsKey(sessionData.name))
+                {
+                    Sponsors.Add(sessionData.name,
+                        new Sponsor
+                        {
+                            Description = sessionData.description,
+                            DisplayOrder = i,
+                            Level = "Premium",
+                            Name = sessionData.name,
+                            Image = "",
+                            Url = ""
+                        });
+                }
+                i++;
+            }
         }
 
         private void ClearExistingSessions()
@@ -202,11 +278,11 @@ namespace Cirrious.Conference.Core.Models
                 }
             }
 
-            Sessions = conferenceModel.Sessions.Select(x => new SessionWithFavoriteFlag()
-                                                                {
-                                                                    Session = x.Value,
-                                                                    IsFavorite = false
-                                                                }).ToDictionary(x => x.Session.Id, x => x);
+            Sessions = conferenceModel.Sessions.Select(x => new SessionWithFavoriteFlag
+            {
+                Session = x.Value,
+                IsFavorite = false
+            }).ToDictionary(x => x.Session.Id, x => x);
 
             foreach (var sessionWithFavoriteFlag in Sessions.Values)
             {
@@ -220,7 +296,7 @@ namespace Cirrious.Conference.Core.Models
             if (propertyChangedEventArgs.PropertyName != "IsFavorite")
                 return;
 
-            var session = (SessionWithFavoriteFlag)sender;
+            var session = (SessionWithFavoriteFlag) sender;
             lock (this)
             {
                 if (_favoriteSessions == null)
