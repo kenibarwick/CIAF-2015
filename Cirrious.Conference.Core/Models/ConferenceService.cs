@@ -190,21 +190,49 @@ namespace Cirrious.Conference.Core.Models
 
                     this.ParseExhibitors(data);
 
+                    this.ParseSessions(data);
+
                     loaded = true;
                 }
             }, "GET");
 
-            if (!loaded)
+            while (!loaded)
             {
                 Thread.Sleep(500);
             }
 
-            PocketConferenceModel conferenceModel;
-            if (!TryLoadSessionsFromStorage(out conferenceModel))
+            //PocketConferenceModel conferenceModel;
+            //if (!TryLoadSessionsFromStorage(out conferenceModel))
+            //{
+            //    conferenceModel = LoadSessionsFromResources();
+            //}
+            //LoadSessionsFromPocketConferenceModel(conferenceModel);
+        }
+
+        private void ParseSessions(SessionData[] data)
+        {
+            Sessions = new Dictionary<string, SessionWithFavoriteFlag>();
+            var i = 0;
+            foreach (var sessionData in data)
             {
-                conferenceModel = LoadSessionsFromResources();
+                var session = new Session
+                {
+                    Day = 0,
+                    Id = sessionData._id,
+                    RoomName = sessionData.location,
+                    Slot = new Slot(),
+                    SlotId = String.Empty,
+                    SpeakerTwitterName = String.Empty,
+                    SpeakerWebsiteURL = String.Empty,
+                    Speaker = sessionData.contributor,
+                    Synopsis = String.Empty,
+                    Title = sessionData.description,
+                    TrackName = String.Empty
+                };
+
+                Sessions.Add(session.Speaker, new SessionWithFavoriteFlag { Session = session});
+                i++;
             }
-            LoadSessionsFromPocketConferenceModel(conferenceModel);
         }
 
         private void ParseExhibitors(SessionData[] data)
